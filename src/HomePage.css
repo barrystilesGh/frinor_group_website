@@ -1,52 +1,41 @@
 .hero {
-  height: 120px;
-  padding: 0.2em;
-  background: #ac05df;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  width: 100%;
+  background: linear-gradient(135deg, #0b8aa5, #17b7d4);
   border-bottom: 3px solid #eee;
 }
 
-.companyName_Logo {
+.companyNameAndLogo {
   display: flex;
   justify-content: center;
-  margin: auto;
+  gap: 1rem;
   text-align: center;
   align-items: center;
-  height: 70%;
+  flex-flow: column;
+  flex-shrink: 0;
+  color: #ffffff;
 }
-.companyName_Logo img {
-  position: relative;
-  top: -10px;
-  right: 5px;
-  width: 50px;
-  height: 50px;
+
+.companyNameAndLogo img {
+  height: auto;
+  width: clamp(50px, 8vw, 90px);
   border-radius: 50%;
 }
 
-.companyName_Logo > div {
-  color: #fff;
+.companyNameAndLogo .motto {
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  color: #ffffff;
+  margin: 0;
 }
 
-.companyName_Logo .motto {
-  margin-top: 3px;
-}
-.companyName_blue {
-  color: #06f3fc;
-  font-size: 1.5rem;
-  margin-inline: 15px;
-}
-.motto {
-  color: #eee;
-  line-height: 1;
-  font-size: 12px;
-  font-weight: 900;
-}
 @media only screen and (max-width: 430px) {
   .motto {
     display: none;
   }
-  .companyName_Logo img {
-    display: none;
-  }
+
   .company_name {
     font-size: 1.1rem;
   }
@@ -57,9 +46,10 @@
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  justify-content: space-evenly;
-  background-color: #d351fa;
-  padding: 5px;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  width: 100%;
 }
 .navigation ul li {
   list-style-type: none;
@@ -67,15 +57,15 @@
 
 .nav-link {
   font-family: "Times New Roman", Times, serif;
-  color: #fff;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
+  color: #ffffff;
 }
 
 ul li .nav-link:hover {
-  color: #000;
+  color: #a10e46;
   border-bottom: 3px solid #ebf5ec;
   transform: scale(1.2);
   padding: 0;

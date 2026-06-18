@@ -13,30 +13,32 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: left 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .slider .slide-wrapper .slideItem {
   width: 100vw;
   height: 350px;
   position: relative;
+  background-size: cover;
+  background-position: center 20%;
 }
 
 .slider .slide-wrapper .slideItem:nth-child(1) {
-  background: url(../images/sliderImage.jpg) center/cover no-repeat;
+  background-image: url(../images/sliderImage.jpg);
 }
 .slider .slide-wrapper .slideItem:nth-child(2) {
-  background: url(../images/bpchecking2.jpeg) center/cover no-repeat;
+  background-image: url(../images/bpchecking2.jpeg);
 }
 .slider .slide-wrapper .slideItem:nth-child(3) {
-  background: url(../images/nurseandpatient.jpeg) center/cover no-repeat;
+  background-image: url(../images/nurseandpatient.jpeg);
 }
 .slider .slide-wrapper .slideItem:nth-child(4) {
-  background: url(../images/care-home.jpg) center/cover no-repeat;
+  background-image: url(../images/care-home.jpg);
 }
 
 .slider .slide-wrapper .slideItem:nth-child(5) {
-  background: url(../images/holdingof-hands.jpg) center/cover no-repeat;
+  background-image: url(../images/holdingof-hands.jpg);
 }
 
 .slider .slide-wrapper .slideItem .cta {

@@ -1,29 +1,23 @@
 import { Link } from "react-router-dom";
-import { Link as Links } from "react-scroll";
 
 const NavBar = () => {
   return (
     <nav className='navigation'>
-      <ul className='nav-link'>
+      <ul className='nav-list'>
         <li>
           <Link to='/' className='nav-link'>
             Home
           </Link>
         </li>
         <li>
-          <Links to='aboutUs' smooth={true} duration={500} className='nav-link'>
+          <Link to='/aboutus' className='nav-link'>
             About Us
-          </Links>
+          </Link>
         </li>
         <li>
-          <Links
-            to='ourServices'
-            smooth={true}
-            duration={500}
-            className='nav-link'
-          >
+          <Link to='/ourservice' className='nav-link'>
             Our Services
-          </Links>
+          </Link>
         </li>
         <li>
           <Link to='/contactus' className='nav-link'>

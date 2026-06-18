@@ -5,6 +5,7 @@ import MotherAndDaugther from "./assets/images/mother-and-daughter.jpg";
 import CareHome from "./assets/images/care-home.jpg";
 import "../src/MainPage.css";
 import { Link } from "react-scroll";
+import { Link as Links } from "react-router-dom";
 
 const MainPage = () => {
   return (
@@ -26,9 +27,6 @@ const MainPage = () => {
             <br />
             Personal care medication, shopping, meal preparation
           </p>
-          <Link id='link' to='home' smooth={true} duration={500}>
-            READ MORE
-          </Link>
         </div>
       </div>
 
@@ -72,8 +70,8 @@ const MainPage = () => {
             <div>
               <h2>Our Service Standard</h2>
               <p>
-                Rehoboth Healthcare Professionals is your industry specialist
-                recruiter for the care and health industry
+                FriNor Group Limited is your industry specialist recruiter for
+                the care and health industry
               </p>
               <Link id='link2' to='home' smooth={true} duration={500}>
                 Find Out More
@@ -133,15 +131,15 @@ const MainPage = () => {
       {/* <!-- The aboout section of the business --> */}
       <div className='inner-container sectionDiv'>
         <section className='about_page'>
-          <h2 id='aboutUs'>About Rehoboth Healthcare Professionals</h2>
+          <h2 id='aboutUs'>About FriNor Group Limited</h2>
           <p>
-            Welcome to Rehoboth Healthcare Professionals, where compassionate
-            care meets professional excellence. At Rehoboth, we are committed to
-            providing comprehensive and personalized home health care services
-            to enhance the well-being and independence of our clients.
+            Welcome to FriNor Group Ltd, where compassionate care meets
+            professional excellence. At FriNor, we are committed to providing
+            comprehensive and personalized home health care services to enhance
+            the well-being and independence of our clients.
           </p>
           <br />
-          <h3 className='h3'>Why Choose Rehoboth Healthcare Professionals?</h3>
+          <h3 className='h3'>Why Choose FriNor Group Ltd?</h3>
           <p>
             <strong>Compassionate Care:</strong>
             <em>
@@ -169,9 +167,8 @@ const MainPage = () => {
             <br />
             <strong>Home-Based Convenience:</strong>
             <em>
-              Rehoboth Healthcare Professionals brings healthcare services to
-              the comfort of your home, promoting a familiar and conducive
-              environment for recovery.
+              FriNor Group Ltd brings healthcare services to the comfort of your
+              home, promoting a familiar and conducive environment for recovery.
             </em>
           </p>
           <Link id='link3' to='aboutUs' smooth={true} duration={500}>
@@ -181,15 +178,15 @@ const MainPage = () => {
 
         {/* <!-- Links to about us page --> */}
         <section>
-          <Link id='link1' to='ourServices' smooth={true} duration={500}>
-            Are you looking for Work?
-          </Link>
-          <Link id='link1' to='ourServices' smooth={true} duration={500}>
-            Are you looking for Staffing?
-          </Link>
-          <Link id='link1' to='aboutUs' smooth={true} duration={500}>
+          <Links id='link1' to='/contactus'>
+            Are you looking for help for your aged?
+          </Links>
+          <Links id='link1' to='/ourservice'>
+            Are you looking for quality and affordable care?
+          </Links>
+          <Links id='link1' to='/aboutus'>
             Know more About Us
-          </Link>
+          </Links>
         </section>
       </div>
       {/* <!-- Testimonials --> */}
@@ -201,9 +198,9 @@ const MainPage = () => {
         <p>
           These testimonials reflect the dedication of our team to provide
           personalized, high-quality care that goes beyond the expected. At
-          Rehoboth Healthcare Professionals, we are honored to be a part of our
-          clients' success stories and are committed to making a positive
-          difference in every home we serve.
+          FriNor Group Ltd, we are honored to be a part of our clients' success
+          stories and are committed to making a positive difference in every
+          home we serve.
           <br />
           <br />
           Contact us today to experience the compassionate and expert care that
@@ -216,8 +213,8 @@ const MainPage = () => {
                 As the primary caregiver for my aging parents, finding reliable
                 assistance for their personal care became a crucial aspect of
                 maintaining their well-being and independence. Thankfully, we
-                discovered the invaluable service provided by Rehoboth
-                healthcare professionals. Their compassionate and dedicated team
+                discovered the invaluable service provided by FriNor healthcare
+                professionals. Their compassionate and dedicated team
                 understands the unique challenges that come with aging, offering
                 unwavering support for both physical and mental well-being..
               </q>
@@ -232,9 +229,8 @@ const MainPage = () => {
                 truly remarkable. Opting for live-in care was a decision rooted
                 in our desire to ensure Mom's comfort and dignity while
                 receiving the round-the-clock care she needed. From the outset,
-                Rehoboth Healthcare Professionals impressed us with their
-                commitment to tailoring their services to meet Mom's specific
-                requirements.
+                FriNor Group Ltd impressed us with their commitment to tailoring
+                their services to meet Mom's specific requirements.
               </q>
             </p>
             <span>- Lucy Quist, Daughter of Mrs. Eleanor Smith</span>
@@ -243,7 +239,7 @@ const MainPage = () => {
             <p>
               <q>
                 The decision to opt for night care was driven by the need for
-                reassurance during the nighttime hours. Rehoboth Healthcare
+                reassurance during the nighttime hours. FriNor Healthcare
                 Professionals stood out for their unique approach of having a
                 dedicated care assistant stay on the premises for at least eight
                 hours each night, offering not only a sense of security but also

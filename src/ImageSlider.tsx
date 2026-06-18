@@ -25,7 +25,7 @@ const ImageSlider = (): JSX.Element => {
       status: "",
       title: " Nurses, Care Assistants & Support Workers",
       content:
-        " At Rehoboth Healthcare Professionals, we are honored to be a part of our clients' success stories and are committed to making a positive difference in every home we serve.",
+        " At Frinor Group Ltd, we are honored to be a part of our clients' success stories and are committed to making a positive difference in every home we serve.",
     },
     {
       key: "003",
@@ -46,7 +46,7 @@ const ImageSlider = (): JSX.Element => {
       status: " ",
       title: "Contact Us",
       content:
-        " Discover the difference that personalized and compassionate home health care can make in your life. Contact Rehoboth Healthcare Professionals today to discuss your healthcare needs and explore how we can support your journey to wellness.",
+        " Discover the difference that personalized and compassionate home health care can make in your life. Contact Frinor Group Ltd today to discuss your healthcare needs and explore how we can support your journey to wellness.",
     },
   ];
 

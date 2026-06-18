@@ -2,6 +2,9 @@ import "../src/Footer.css";
 import { Link } from "react-scroll";
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <>
       <footer className='ft'>
@@ -9,7 +12,7 @@ const Footer = () => {
           <h3 id='contactUs'>Get In Touch with Us</h3>
           <p>
             Discover the difference that personalized and compassionate home
-            health care can make in your life. Contact Rehoboth Healthcare
+            healthcare can make in your life. Contact FriNor Healthcare
             Professionals today to discuss your healthcare needs and explore how
             we can support your journey to wellness.
           </p>
@@ -50,22 +53,19 @@ const Footer = () => {
             <p>
               T:
               <a href='tel:+07553426873' target='_blank'>
-                07553426873
+                07348499288
               </a>
             </p>
             <p>
               E:
-              <a href='mailto:info@rehoboth-health.co.uk' target='_blank'>
-                info@rehoboth-health.co.uk
+              <a href='mailto:info@frinorgroup.co.uk' target='_blank'>
+                info@frinorgroup.co.uk
               </a>
             </p>
             <p>
               E:
-              <a
-                href='mailto:Recruitment@rehoboth-health.co.uk'
-                target='_blank'
-              >
-                Recruitment@rehoboth-health.co.uk
+              <a href='mailto: manager@frinorgroup.co.uk' target='_blank'>
+                manager@frinorgroup.co.uk
               </a>
             </p>
           </div>
@@ -74,28 +74,33 @@ const Footer = () => {
               <i className='fa-solid fa-location-dot'></i>
               Physical Address
             </h3>
-            <p>25 Booth Hall Road,</p>
-            <p>M9 7bg,</p>
-            <p>Manchester</p>
+            <p>42 Bramcote Avenue,</p>
+            <p>WA11 9JQ,</p>
+            <p>St Helens</p>
+            <p>Merseyside</p>
           </div>
           <div className='el'>
             <h3>Office Opening Hours</h3>
             <p>Mon-Fri: 9:00am-5:00pm</p>
-            <p>Saturday: 8:00am-2pm</p>
-            <p>Sunday:Closed</p>
           </div>
         </div>
         {/* <!-- Company details --> */}
         <div className='devDetails'>
           <p>
-            Copyright &copy; 2023 rehoboth healthcare professionals, Registered
-            in Manchester, Company Reg: 14391148 -All Rights Reserved
+            Copyright &copy;{year} FriNor Group Ltd, Registered in England,
+            United Kingdom Company Reg: 17141487 -All Rights Reserved
           </p>
           <p>Website Designed by Barry Stiles</p>
           <span>
             <i className='fa-solid fa-house'></i>
-            <Link to='home' smooth={true} duration={300}>
-              To Home
+            <Link
+              to='home'
+              smooth={true}
+              duration={500}
+              offset={-15000}
+              className='to_home'
+            >
+              To Top
             </Link>
           </span>
         </div>

@@ -16,11 +16,10 @@ const MissionAndService = () => {
       id: "mission",
       content: (
         <p>
-          At Rehoboth healthcare professionals, our mission is to provide
-          compassionate and personalized home health care services to our
-          clients. We strive to improve the quality of life for those we serve,
-          while prioritizing their safety and well-being. We are professionals
-          who truly care.
+          At Frinor Group Ltd, our mission is to provide compassionate and
+          personalized home health care services to our clients. We strive to
+          improve the quality of life for those we serve, while prioritizing
+          their safety and well-being. We are professionals who truly care.
         </p>
       ),
       title: "Our Mission",

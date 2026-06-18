@@ -1,30 +1,46 @@
 .mission-statement {
-  background: #ac05df;
-  padding: 10px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e8f5fd 50%, #dff2fb 100%);
+  padding: 3rem 2rem;
+  margin: 2rem 0;
 }
 
 .mission-statement #tabs > ul {
   display: flex;
+
   list-style-type: none;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.mission-statement #tabs > ul > li {
+  margin: 0;
 }
 
 .mission-statement #tabs > ul > li > a {
   text-decoration: none;
-  display: block;
-  height: 30px;
-  line-height: 30px;
-  margin-right: 5px;
-  background: #caff8a;
-  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  background: white;
+  color: #0e2f4a;
   font-weight: 600;
-  padding: 0 3px;
-  border-radius: 10px 10px 0 0;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  letter-spacing: 0.3px;
+  min-height: 44px;
 }
 
-@media only screen and (max-width: 308px) {
-  .mission-statement > ul > li > a {
-    font-size: 80%;
-  }
+.mission-statement #tabs > ul > li > a:hover:not(.visibleBtn) {
+  background: #f0f9ff;
+  border-color: #0b8aa5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(11, 138, 165, 0.15);
 }
 
 .mission-statement #tabs .hidden {
@@ -33,17 +49,109 @@
 
 .mission-statement #tabs .visible {
   display: block;
-  padding: 25px;
-  background: #3bf4fb;
-  color: #000;
-  border-radius: 0 10px 10px 10px;
-  min-height: 150px;
+  padding: 2.5rem;
+  background: white;
+  color: #1a1a1a;
+  border-radius: 12px;
+  min-height: 200px;
+  box-shadow: 0 8px 32px rgba(11, 138, 165, 0.12);
+  border: 1px solid rgba(11, 138, 165, 0.1);
+  animation: fadeInContent 0.4s ease;
+  line-height: 1.8;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+}
+
+.mission-statement #tabs .visible p {
+  margin: 0;
+  color: #374151;
+}
+
+.mission-statement #tabs .visible strong {
+  color: #0e2f4a;
+  font-weight: 700;
+}
+
+.mission-statement #tabs .visible br {
+  margin: 0.5rem 0;
 }
 
 /* js button style */
 .mission-statement #tabs > ul li .visibleBtn {
-  background: #3bf4fb;
+  background: linear-gradient(135deg, #0b8aa5 0%, #0a6c8e 100%);
+  color: #ffffff;
+  border-color: #0b8aa5;
+  box-shadow: 0 4px 16px rgba(11, 138, 165, 0.3);
+  font-weight: 700;
 }
+
+.mission-statement #tabs > ul li .visibleBtn:hover {
+  background: linear-gradient(135deg, #0a6c8e 0%, #084d6a 100%);
+  box-shadow: 0 6px 20px rgba(11, 138, 165, 0.4);
+  transform: translateY(-2px);
+}
+
 .activeBtn {
-  background: #3bf4fb;
+  background: linear-gradient(135deg, #0b8aa5 0%, #0a6c8e 100%);
+  color: #ffffff;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mission-statement {
+    padding: 2rem 1.5rem;
+  }
+
+  .mission-statement #tabs > ul {
+    gap: 0.5rem;
+  }
+
+  .mission-statement #tabs > ul > li > a {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .mission-statement #tabs .visible {
+    padding: 2rem;
+    min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mission-statement {
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .mission-statement #tabs > ul {
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .mission-statement #tabs > ul > li > a {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    min-height: 40px;
+  }
+
+  .mission-statement #tabs .visible {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width: 308px) {
+  .mission-statement #tabs > ul > li > a {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.8rem;
+  }
 }

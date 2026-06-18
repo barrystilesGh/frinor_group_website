@@ -1,9 +1,10 @@
 import React, { useState, type JSX } from "react";
+import emailjs from "@emailjs/browser";
 import Header from "../Header";
 import Footer from "../Footer";
 import sendEmail from "../utils/sendEmails";
 import "./ContactUs.css";
-import Logo from "../assets/images/Rehoboth logo.png";
+import Logo from "../assets/images/Frinor Logo.jpeg";
 
 interface FormValues {
   name: string;
@@ -25,7 +26,7 @@ const ContactUs = (): JSX.Element => {
   const [success, setSuccess] = useState<boolean>(false);
 
   const handleChange = (
-    evt: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    evt: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     /* This is to get the dynamic object key [name] */
     const { name } = evt.target;
@@ -63,14 +64,33 @@ const ContactUs = (): JSX.Element => {
 
   return (
     <div>
-      <title>Rehoboth Healthcare Professinals</title>
+      <title>FriNor Group Ltd</title>
       <link rel='shortcut icon' type='image/x-icon' href={Logo} />
       <Header />
       <div className='contact-wrapper '>
         {success && (
           <div className='success-banner'>Message sent successfully!</div>
         )}
+
         <h1>We are excited to hear from you</h1>
+        <div className='contact-highlights'>
+          <div className='contact-highlight contact-highlight--blue'>
+            <h3>Why contact FriNor Group?</h3>
+            <ul>
+              <li>Compassionate, patient-centered care</li>
+              <li>Experienced, friendly healthcare professionals</li>
+              <li>Flexible appointments and quick responses</li>
+              <li>Clear guidance through every step</li>
+            </ul>
+          </div>
+
+          <div className='contact-highlight contact-highlight--yellow'>
+            <h3>Get in touch with us</h3>
+            <p>Reach out for consultations, bookings, or general enquiries.</p>
+            <p>We are happy to hear from you!</p>
+          </div>
+        </div>
+
         <form onSubmit={handleSubmit} className='contact-form'>
           <div className='input-div'>
             <label htmlFor='name'>Name: </label>

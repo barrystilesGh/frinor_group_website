@@ -1,5 +1,6 @@
-import "../src/MissingPage.css";
-import Header from "./Header";
+import "./MissingPage.css";
+import Header from "../Header";
+
 const MissingPage = () => {
   return (
     <>
