@@ -1,5 +1,4 @@
 import React, { useState, type JSX } from "react";
-import emailjs from "@emailjs/browser";
 import Header from "../Header";
 import Footer from "../Footer";
 import sendEmail from "../utils/sendEmails";
