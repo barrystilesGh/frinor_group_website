@@ -1,7 +1,7 @@
 import Header from "../Header";
 import Footer from "../Footer";
 import "./AboutUs.css";
-import Logo from "../assets/images/Frinor Logo.jpeg";
+import Logo from "../assets/images/Frinor_Logo.jpeg";
 
 const AboutUs = () => {
   return (

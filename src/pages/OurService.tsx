@@ -1,6 +1,6 @@
 import Header from "../Header";
 import Footer from "../Footer";
-import Logo from "../assets/images/Frinor Logo.jpeg";
+import Logo from "../assets/images/Frinor_Logo.jpeg";
 import "./OurService.css";
 
 const OurService = () => {

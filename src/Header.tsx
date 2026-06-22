@@ -1,5 +1,5 @@
 import "./Header.css";
-import Logo from "../src/assets/images/Frinor Logo.jpeg";
+import Logo from "../src/assets/images/Frinor_Logo.jpeg";
 import NavBar from "./NavBar";
 
 const Header = () => {

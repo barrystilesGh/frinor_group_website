@@ -3,7 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import sendEmail from "../utils/sendEmails";
 import "./ContactUs.css";
-import Logo from "../assets/images/Frinor Logo.jpeg";
+import Logo from "../assets/images/Frinor_Logo.jpeg";
 
 interface FormValues {
   name: string;
