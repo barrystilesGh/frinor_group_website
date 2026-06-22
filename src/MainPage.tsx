@@ -51,9 +51,6 @@ const MainPage = () => {
                 From the service we provide to our staff, and to the experience
                 of our clientele, we stand for quality
               </p>
-              <Link id='link2' to='home' smooth={true} duration={500}>
-                Find Out More
-              </Link>
             </div>
           </div>
           <div className='card'>
@@ -73,9 +70,6 @@ const MainPage = () => {
                 FriNor Group Limited is your industry specialist recruiter for
                 the care and health industry
               </p>
-              <Link id='link2' to='home' smooth={true} duration={500}>
-                Find Out More
-              </Link>
             </div>
           </div>
           <div className='card'>
@@ -97,9 +91,6 @@ const MainPage = () => {
                 within all areas and specialities of the healthcare and domestic
                 sector
               </p>
-              <Link id='link2' to='home' smooth={true} duration={500}>
-                Find Out More
-              </Link>
             </div>
           </div>
           <div className='card'>
@@ -121,9 +112,6 @@ const MainPage = () => {
                 healthcare professionals bring expertise and dedication to every
                 service we offer.
               </p>
-              <Link id='link2' to='home' smooth={true} duration={500}>
-                Find Out More
-              </Link>
             </div>
           </div>
         </div>
