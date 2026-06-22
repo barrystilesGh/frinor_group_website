@@ -129,7 +129,7 @@ p {
     background: url(../images/sliderImage.jpg) center/cover no-repeat;
   }
   .slider .slide-wrapper .slideItem:nth-child(2) {
-    background: url(../images/bpchecking2.jpeg) center 25%/cover no-repeat;
+    background: url(../images/bpchecking2.jpeg) center 25% / cover no-repeat;
   }
   .slider .slide-wrapper .slideItem:nth-child(3) {
     background: url(../images/care-home.jpg) center/cover no-repeat;
@@ -355,14 +355,6 @@ p {
   }
 
   /* contact us and footer */
-  .ft {
-    min-height: 20vh;
-    grid-area: ft;
-    background: #102a43;
-    padding: 0.5em;
-    font-weight: 500;
-    font-family: "Times New Roman", Times, serif;
-  }
 
   .el h3 {
     color: #fff;
